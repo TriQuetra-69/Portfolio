@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sanskar Pandey — MCA (Cloud Computing) | Portfolio</title>
+<meta name="description" content="Portfolio of Sanskar Pandey — MCA student specialising in Cloud Computing at Parul University. Linux, Python, Java and web development." />
+<meta name="author" content="Sanskar Pandey" />
+<meta name="theme-color" content="#0b1d33" />
+<meta property="og:title" content="Sanskar Pandey — Aspiring Cloud Engineer" />
+<meta property="og:description" content="MCA (Cloud Computing) @ Parul University · Linux · Python · Web Development" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cellipse cx='32' cy='40' rx='30' ry='9' fill='%23f2c14e'/%3E%3Cpath d='M14 40 Q14 14 32 14 Q50 14 50 40Z' fill='%23f2c14e'/%3E%3Crect x='14' y='31' width='36' height='6' fill='%23d62828'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ====== SVG ICON SPRITE ====== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.7.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.81 11.81 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z M22 6l-10 7L2 6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.18 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M7 10l5 5 5-5 M12 15V3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14 M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 9h11v11H9z M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M16 18l6-6-6-6 M8 6l-6 6 6 6"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 17l6-6-6-6 M12 19h8"/></symbol>
+    <symbol id="i-web" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 4h18v16H3z M3 9h18 M7 6.5h.01 M10 6.5h.01"/></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 8c4.97 0 9-1.34 9-3s-4.03-3-9-3-9 1.34-9 3 4.03 3 9 3z M21 12c0 1.66-4 3-9 3s-9-1.34-9-3 M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2l3 6 6 .9-4.5 4.3 1 6.3L12 16.6 6.5 19.5l1-6.3L3 8.9 9 8z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M1.5 12H4M20 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8"/></g></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M12 19V5 M5 12l7-7 7 7"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 2L11 13 M22 2l-7 20-4-9-9-4 20-7z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M18 6L6 18M6 6l12 12"/></symbol>
+    <!-- Straw hat logo -->
+    <symbol id="i-hat" viewBox="0 0 64 44">
+      <ellipse cx="32" cy="32" rx="30" ry="9" fill="#f2c14e" stroke="#8a5a14" stroke-width="2"/>
+      <path d="M14 31 Q14 6 32 6 Q50 6 50 31 Z" fill="#f6cf62" stroke="#8a5a14" stroke-width="2"/>
+      <path d="M14.5 23 Q32 27 49.5 23 L50 30 Q32 34 14 30 Z" fill="#d62828"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ====== LOADER ====== -->
+<div id="loader" role="status" aria-live="polite">
+  <div class="loader-inner">
+    <div class="logpose">
+      <div class="lp-glass"><div class="lp-needle"></div></div>
+      <div class="lp-base"></div>
+    </div>
+    <p class="loader-title">Setting Sail<span class="dots"></span></p>
+    <div class="loader-bar"><span id="loaderFill"></span></div>
+    <p class="loader-sub">Charting a course to the Grand Line</p>
+  </div>
+</div>
+
+<!-- ====== 3D BACKGROUND ====== -->
+<canvas id="scene" aria-hidden="true"></canvas>
+<div id="sceneShade" aria-hidden="true"></div>
+<div id="progress" aria-hidden="true"></div>
+
+<!-- ====== HEADER ====== -->
+<header id="header">
+  <nav class="nav container" aria-label="Primary">
+    <a href="#home" class="brand" aria-label="Sanskar Pandey — home">
+      <svg class="brand-hat"><use href="#i-hat"/></svg>
+      <span>Sanskar<b>.</b></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="nav-mobile-only"><a href="assets/Sanskar_Pandey_Resume.pdf" download="Sanskar_Pandey_Resume.pdf" data-resume>Download Resume</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to night sea" title="Toggle day / night sea">
+        <svg class="ico-sun"><use href="#i-sun"/></svg><svg class="ico-moon"><use href="#i-moon"/></svg>
+      </button>
+      <a class="btn btn-sm btn-gold nav-resume" href="assets/Sanskar_Pandey_Resume.pdf" download="Sanskar_Pandey_Resume.pdf" data-resume>
+        <svg><use href="#i-download"/></svg> Resume
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- ====== HERO ====== -->
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow reveal"><span class="pulse"></span> Open to internships &amp; entry-level roles</p>
+      <h1 class="hero-title reveal">
+        <span class="hi">Ahoy! I'm</span>
+        <span class="name">Sanskar Pandey</span>
+      </h1>
+      <p class="hero-role reveal"><span class="role-prefix">Aspiring</span> <span id="typed" class="typed"></span><span class="caret">|</span></p>
+      <p class="hero-text reveal">
+        MCA student specialising in <strong>Cloud Computing</strong> at <strong>Parul University</strong>.
+        I work with <strong>Linux</strong> and <strong>Python</strong>, and I build clean, responsive web apps.
+        I'm looking for a crew to learn with and projects worth sailing for.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-red">View My Work <svg><use href="#i-arrow"/></svg></a>
+        <a href="assets/Sanskar_Pandey_Resume.pdf" download="Sanskar_Pandey_Resume.pdf" class="btn btn-ghost" data-resume><svg><use href="#i-download"/></svg> Download Resume</a>
+        <a href="#contact" class="btn btn-link">Hire Me</a>
+      </div>
+      <div class="socials reveal" aria-label="Social profiles">
+        <a data-social="linkedin" aria-label="LinkedIn" title="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+        <a data-social="github" aria-label="GitHub" title="GitHub"><svg><use href="#i-github"/></svg></a>
+        <a data-social="instagram" aria-label="Instagram" title="Instagram"><svg><use href="#i-instagram"/></svg></a>
+        <a data-social="x" aria-label="X (Twitter)" title="X (Twitter)"><svg><use href="#i-x"/></svg></a>
+        <a data-social="whatsapp" aria-label="WhatsApp" title="WhatsApp"><svg><use href="#i-whatsapp"/></svg></a>
+        <a data-social="email" aria-label="Email" title="Email"><svg><use href="#i-mail"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+    <span class="mouse"><span class="wheel"></span></span>
+    <span>Scroll to set sail</span>
+  </a>
+</section>
+
+<!-- ====== ABOUT ====== -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">01 · The Captain's Log</span>
+      <h2>About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="wanted-wrap reveal">
+        <div class="wanted" id="wanted">
+          <div class="w-title">WANTED</div>
+          <div class="w-photo" id="wPhoto">
+            <svg viewBox="0 0 200 170" class="w-portrait" aria-label="Portrait illustration">
+              <defs>
+                <radialGradient id="wbg" cx="50%" cy="45%" r="70%"><stop offset="0" stop-color="#f7e3b0"/><stop offset="1" stop-color="#c9a266"/></radialGradient>
+              </defs>
+              <rect width="200" height="170" fill="url(#wbg)"/>
+              <circle cx="100" cy="105" r="42" fill="#7a4e24" opacity=".22"/>
+              <path d="M40 170 Q100 118 160 170Z" fill="#6b3f1d" opacity=".55"/>
+              <text x="100" y="128" text-anchor="middle" font-family="Pirata One, Georgia, serif" font-size="58" fill="#3b2412">SP</text>
+              <ellipse cx="100" cy="74" rx="78" ry="16" fill="#f2c14e" stroke="#5a3a10" stroke-width="3"/>
+              <path d="M55 73 Q55 22 100 22 Q145 22 145 73Z" fill="#f6cf62" stroke="#5a3a10" stroke-width="3"/>
+              <path d="M56 58 Q100 68 144 58 L145 71 Q100 82 55 71Z" fill="#d62828"/>
+              <path d="M70 40 Q100 30 130 40" stroke="#c99a2e" stroke-width="2" fill="none" opacity=".6"/>
+            </svg>
+          </div>
+          <div class="w-sub">HIRE ON SIGHT</div>
+          <div class="w-name">SANSKAR PANDEY</div>
+          <div class="w-bounty"><span class="beri">฿</span>2,027,000,000<span>-</span></div>
+          <div class="w-tags">CLOUD · LINUX · PYTHON</div>
+          <div class="w-marine">MARINE</div>
+        </div>
+      </div>
+      <div class="about-copy">
+        <div class="card reveal">
+          <h3>Future cloud engineer, sailing my own Grand Line.</h3>
+          <p>
+            I'm <strong>Sanskar Pandey</strong>, currently pursuing a <strong>Master of Computer Applications (MCA)</strong>
+            at <strong>Parul University</strong> with a specialisation in <strong>Cloud Computing</strong>.
+            I graduated with a <strong>B.Sc. in Computer Science</strong> from Mumbai University, where I built a solid base in
+            programming, data structures and web development.
+          </p>
+          <p>
+            I'm comfortable on the <strong>Linux</strong> command line and like writing <strong>Python</strong> to automate tasks and solve problems.
+            I've also built several API-driven web apps. Right now I'm going deeper into cloud service models, virtualisation and
+            deployment, and I want to join a team where I can contribute, learn quickly and grow into a strong cloud/DevOps engineer.
+          </p>
+          <ul class="facts">
+            <li><svg><use href="#i-pin"/></svg><span><b>Based in</b> Mumbai, Maharashtra, India</span></li>
+            <li><svg><use href="#i-mail"/></svg><span><b>Email</b> <a data-social="email" class="plain" data-text="email"></a></span></li>
+            <li><svg><use href="#i-cloud"/></svg><span><b>Focus</b> Cloud Computing · Linux · Python</span></li>
+            <li><svg><use href="#i-check"/></svg><span><b>Status</b> Available for internships &amp; full-time roles</span></li>
+          </ul>
+          <div class="about-cta">
+            <a href="assets/Sanskar_Pandey_Resume.pdf" download="Sanskar_Pandey_Resume.pdf" class="btn btn-red" data-resume><svg><use href="#i-download"/></svg> Download CV</a>
+            <a href="#contact" class="btn btn-ghost-dark">Let's Talk <svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat reveal"><span class="num">MCA</span><span class="lbl">Cloud Computing<br/>Parul University</span></div>
+          <div class="stat reveal"><span class="num" data-count="3">0</span><span class="lbl">Web projects<br/>shipped</span></div>
+          <div class="stat reveal"><span class="num" data-count="10" data-suffix="+">0</span><span class="lbl">Technologies<br/>&amp; tools</span></div>
+          <div class="stat reveal"><span class="num">B.Sc</span><span class="lbl">Computer Science<br/>Mumbai University</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SKILLS ====== -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">02 · Devil Fruit Powers</span>
+      <h2>Skills &amp; Abilities</h2>
+      <p class="lead">What I bring aboard, from cloud and Linux fundamentals to full front-end development.</p>
+    </div>
+
+    <div class="skill-tabs reveal" role="tablist" aria-label="Skill categories">
+      <button class="chip-btn active" role="tab" aria-selected="true" data-skill-filter="all">All</button>
+      <button class="chip-btn" role="tab" aria-selected="false" data-skill-filter="cloud">Cloud &amp; OS</button>
+      <button class="chip-btn" role="tab" aria-selected="false" data-skill-filter="lang">Languages</button>
+      <button class="chip-btn" role="tab" aria-selected="false" data-skill-filter="web">Web</button>
+      <button class="chip-btn" role="tab" aria-selected="false" data-skill-filter="data">Data &amp; Tools</button>
+    </div>
+
+    <div class="skills-grid" id="skillsGrid">
+      <article class="skill-card reveal featured" data-cat="cloud">
+        <div class="sc-icon"><svg><use href="#i-cloud"/></svg></div>
+        <h3>Cloud Computing</h3>
+        <p>MCA specialisation covering service models (IaaS / PaaS / SaaS), virtualisation, deployment models and cloud architecture fundamentals.</p>
+        <div class="meter"><span style="--w:72%"></span></div><small>Specialisation · Actively learning</small>
+      </article>
+      <article class="skill-card reveal featured" data-cat="cloud">
+        <div class="sc-icon"><svg><use href="#i-terminal"/></svg></div>
+        <h3>Linux</h3>
+        <p>Command line, file system navigation, users &amp; permissions, package management and basic shell scripting.</p>
+        <div class="meter"><span style="--w:75%"></span></div><small>Intermediate</small>
+      </article>
+      <article class="skill-card reveal featured" data-cat="lang">
+        <div class="sc-icon"><svg><use href="#i-code"/></svg></div>
+        <h3>Python</h3>
+        <p>Scripting, automation, problem solving with data structures &amp; algorithms, and working with files and APIs.</p>
+        <div class="meter"><span style="--w:80%"></span></div><small>Proficient</small>
+      </article>
+      <article class="skill-card reveal" data-cat="lang">
+        <div class="sc-icon"><svg><use href="#i-code"/></svg></div>
+        <h3>Java &amp; C++</h3>
+        <p>Object-oriented programming, core language features and DSA practice.</p>
+        <div class="meter"><span style="--w:65%"></span></div><small>Intermediate</small>
+      </article>
+      <article class="skill-card reveal" data-cat="web">
+        <div class="sc-icon"><svg><use href="#i-web"/></svg></div>
+        <h3>HTML, CSS &amp; Bootstrap</h3>
+        <p>Semantic, responsive layouts and clean UI design that works on every screen size.</p>
+        <div class="meter"><span style="--w:85%"></span></div><small>Proficient</small>
+      </article>
+      <article class="skill-card reveal" data-cat="web">
+        <div class="sc-icon"><svg><use href="#i-web"/></svg></div>
+        <h3>JavaScript</h3>
+        <p>DOM manipulation, fetch/REST API integration, dynamic rendering and interactive game logic.</p>
+        <div class="meter"><span style="--w:72%"></span></div><small>Intermediate</small>
+      </article>
+      <article class="skill-card reveal" data-cat="data">
+        <div class="sc-icon"><svg><use href="#i-db"/></svg></div>
+        <h3>MySQL &amp; MongoDB</h3>
+        <p>Relational queries, schema basics and document databases (fundamentals).</p>
+        <div class="meter"><span style="--w:60%"></span></div><small>Basics</small>
+      </article>
+      <article class="skill-card reveal" data-cat="data">
+        <div class="sc-icon"><svg><use href="#i-tool"/></svg></div>
+        <h3>Git, GitHub &amp; VS Code</h3>
+        <p>Version control, branching and commits, collaboration on GitHub, and an efficient developer workflow.</p>
+        <div class="meter"><span style="--w:75%"></span></div><small>Intermediate</small>
+      </article>
+      <article class="skill-card reveal" data-cat="lang">
+        <div class="sc-icon"><svg><use href="#i-brain"/></svg></div>
+        <h3>Data Structures &amp; Algorithms</h3>
+        <p>Arrays, linked lists, stacks, queues, trees, searching and sorting, and complexity analysis.</p>
+        <div class="meter"><span style="--w:68%"></span></div><small>Intermediate</small>
+      </article>
+    </div>
+
+    <div class="crew reveal">
+      <h3>Crew Qualities <span>(soft skills)</span></h3>
+      <div class="crew-list">
+        <span>Excellent communication</span>
+        <span>Strong interpersonal skills</span>
+        <span>Proactive &amp; self-motivated</span>
+        <span>Exceptional organisation</span>
+        <span>Quick learner</span>
+        <span>Team player</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PROJECTS ====== -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">03 · The Treasure Chest</span>
+      <h2>Featured Projects</h2>
+      <p class="lead">Things I've built. Tap <b>Details</b> for the full story or <b>Code</b> to see the source.</p>
+    </div>
+
+    <div class="proj-filters reveal" role="tablist" aria-label="Project filters">
+      <button class="chip-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="chip-btn" data-filter="api" role="tab" aria-selected="false">API Apps</button>
+      <button class="chip-btn" data-filter="game" role="tab" aria-selected="false">Games</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <article class="project reveal" data-tags="api" data-project="weather">
+        <div class="p-thumb thumb-weather">
+          <svg viewBox="0 0 320 180" aria-hidden="true">
+            <defs><linearGradient id="gw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d7dd2"/><stop offset="1" stop-color="#0b3c6f"/></linearGradient></defs>
+            <rect width="320" height="180" fill="url(#gw)"/>
+            <circle cx="200" cy="70" r="30" fill="#ffd23f"/>
+            <g fill="#fff"><circle cx="140" cy="100" r="26"/><circle cx="170" cy="90" r="32"/><circle cx="205" cy="104" r="22"/><rect x="118" y="100" width="108" height="26" rx="13"/></g>
+            <text x="28" y="48" fill="#fff" font-family="Poppins,Arial" font-weight="700" font-size="30">28°C</text>
+            <text x="28" y="70" fill="#cfe6ff" font-family="Poppins,Arial" font-size="12">Mumbai · Partly cloudy</text>
+            <g fill="#cfe6ff" font-family="Poppins,Arial" font-size="11"><text x="28" y="152">💧 72%</text><text x="92" y="152">🌬 14 km/h</text></g>
+          </svg>
+          <span class="p-badge">REST API</span>
+        </div>
+        <div class="p-body">
+          <h3>Weather WebApp</h3>
+          <p>Real-time weather for any city: temperature, conditions, humidity and wind speed, pulled from the OpenWeatherMap API.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>OpenWeatherMap</li></ul>
+          <div class="p-actions">
+            <button class="btn btn-sm btn-red" data-open="weather"><svg><use href="#i-eye"/></svg> Details</button>
+            <a class="btn btn-sm btn-ghost-dark" data-repo="weather"><svg><use href="#i-github"/></svg> Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal" data-tags="api" data-project="tmovies">
+        <div class="p-thumb thumb-movies">
+          <svg viewBox="0 0 320 180" aria-hidden="true">
+            <rect width="320" height="180" fill="#141018"/>
+            <g opacity=".95">
+              <rect x="24" y="30" width="62" height="92" rx="6" fill="#d62828"/><rect x="98" y="30" width="62" height="92" rx="6" fill="#f2c14e"/>
+              <rect x="172" y="30" width="62" height="92" rx="6" fill="#2d7dd2"/><rect x="246" y="30" width="62" height="92" rx="6" fill="#6a4c93"/>
+            </g>
+            <g fill="#fff" opacity=".85"><polygon points="48,64 48,88 68,76"/><polygon points="122,64 122,88 142,76"/><polygon points="196,64 196,88 216,76"/><polygon points="270,64 270,88 290,76"/></g>
+            <text x="24" y="150" fill="#fff" font-family="Poppins,Arial" font-weight="700" font-size="20">tmovies</text>
+            <text x="120" y="150" fill="#f2c14e" font-family="Poppins,Arial" font-size="14">★★★★☆ 8.4</text>
+          </svg>
+          <span class="p-badge">REST API</span>
+        </div>
+        <div class="p-body">
+          <h3>tmovies: Movie Explorer</h3>
+          <p>Search any movie and browse posters, ratings and descriptions, rendered dynamically from a public movie API in a clean UI.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Movie API</li></ul>
+          <div class="p-actions">
+            <button class="btn btn-sm btn-red" data-open="tmovies"><svg><use href="#i-eye"/></svg> Details</button>
+            <a class="btn btn-sm btn-ghost-dark" data-repo="tmovies"><svg><use href="#i-github"/></svg> Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal" data-tags="game" data-project="chess">
+        <div class="p-thumb thumb-chess">
+          <svg viewBox="0 0 320 180" aria-hidden="true">
+            <rect width="320" height="180" fill="#2a1a0e"/>
+            <g id="board" transform="translate(20 10) skewX(-12)"></g>
+            <text x="228" y="118" font-size="96" fill="#f3e2b8" font-family="serif" text-anchor="middle" style="filter:drop-shadow(0 6px 6px rgba(0,0,0,.6))">♞</text>
+          </svg>
+          <span class="p-badge">Game Logic</span>
+        </div>
+        <div class="p-body">
+          <h3>Chess Game</h3>
+          <p>A browser-based two-player chess game with standard rules, piece movement, turn handling and move validation.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Game Logic</li></ul>
+          <div class="p-actions">
+            <button class="btn btn-sm btn-red" data-open="chess"><svg><use href="#i-eye"/></svg> Details</button>
+            <a class="btn btn-sm btn-ghost-dark" data-repo="chess"><svg><use href="#i-github"/></svg> Code</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="more-work reveal">
+      <p>There's more on my GitHub, including new cloud and Python experiments.</p>
+      <a class="btn btn-gold" data-social="github"><svg><use href="#i-github"/></svg> Visit my GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== EDUCATION ====== -->
+<section id="education" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">04 · The Voyage So Far</span>
+      <h2>Education</h2>
+      <p class="lead">Every island on the Log Pose has taught me something new.</p>
+    </div>
+    <ol class="timeline">
+      <li class="tl-item current reveal">
+        <div class="tl-dot"><svg><use href="#i-hat"/></svg></div>
+        <div class="tl-card">
+          <div class="tl-top"><span class="tl-date">2025 – 2027</span><span class="tl-badge">Currently Pursuing</span></div>
+          <h3>Master of Computer Applications (MCA)</h3>
+          <p class="tl-org">Parul University · Vadodara, Gujarat</p>
+          <p class="tl-spec"><b>Specialisation:</b> Cloud Computing</p>
+          <ul class="tags"><li>Cloud Architecture</li><li>Virtualisation</li><li>Linux</li><li>Python</li></ul>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top"><span class="tl-date">Aug 2022 – Apr 2025</span><span class="tl-badge done">Completed</span></div>
+          <h3>Bachelor of Science in Computer Science</h3>
+          <p class="tl-org">Mumbai University</p>
+          <ul class="tags"><li>Programming</li><li>DSA</li><li>Web Development</li><li>Databases</li></ul>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top"><span class="tl-date">Mar 2021 – Mar 2022</span><span class="tl-badge done">Completed</span></div>
+          <h3>Higher Secondary Certificate (HSC)</h3>
+          <p class="tl-org">Mumbai University</p>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top"><span class="tl-date">Jan 2019 – Mar 2020</span><span class="tl-badge done">Completed</span></div>
+          <h3>Secondary School Certificate (SSC)</h3>
+          <p class="tl-org">Mumbai University</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ====== CONTACT ====== -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">05 · Den Den Mushi</span>
+      <h2>Let's Work Together</h2>
+      <p class="lead">Hiring for a cloud, DevOps or developer role, or just want to connect? My inbox is always open.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="ci-card reveal">
+          <div class="ci-ico"><svg><use href="#i-mail"/></svg></div>
+          <div class="ci-txt"><span>Email</span><a data-social="email" data-text="email"></a></div>
+          <button class="icon-btn small" type="button" id="copyEmail" aria-label="Copy email address" title="Copy email"><svg><use href="#i-copy"/></svg></button>
+        </div>
+        <div class="ci-card reveal">
+          <div class="ci-ico"><svg><use href="#i-phone"/></svg></div>
+          <div class="ci-txt"><span>Phone</span><a data-social="phone" data-text="phone"></a></div>
+        </div>
+        <div class="ci-card reveal">
+          <div class="ci-ico"><svg><use href="#i-whatsapp"/></svg></div>
+          <div class="ci-txt"><span>WhatsApp</span><a data-social="whatsapp">Chat with me</a></div>
+        </div>
+        <div class="ci-card reveal">
+          <div class="ci-ico"><svg><use href="#i-pin"/></svg></div>
+          <div class="ci-txt"><span>Location</span><p>Mumbai, India · Open to relocate</p></div>
+        </div>
+        <div class="socials big reveal" aria-label="Social profiles">
+          <a data-social="linkedin" aria-label="LinkedIn" title="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+          <a data-social="github" aria-label="GitHub" title="GitHub"><svg><use href="#i-github"/></svg></a>
+          <a data-social="instagram" aria-label="Instagram" title="Instagram"><svg><use href="#i-instagram"/></svg></a>
+          <a data-social="x" aria-label="X (Twitter)" title="X (Twitter)"><svg><use href="#i-x"/></svg></a>
+          <a data-social="whatsapp" aria-label="WhatsApp" title="WhatsApp"><svg><use href="#i-whatsapp"/></svg></a>
+        </div>
+      </div>
+
+      <form class="contact-form card reveal" id="contactForm" novalidate>
+        <div class="row2">
+          <div class="field">
+            <label for="cf-name">Your name</label>
+            <input id="cf-name" name="name" type="text" placeholder="Monkey D. Luffy" autocomplete="name" required />
+            <small class="err"></small>
+          </div>
+          <div class="field">
+            <label for="cf-email">Your email</label>
+            <input id="cf-email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required />
+            <small class="err"></small>
+          </div>
+        </div>
+        <div class="field">
+          <label for="cf-subject">Subject</label>
+          <select id="cf-subject" name="subject">
+            <option>Job opportunity</option>
+            <option>Internship opportunity</option>
+            <option>Project collaboration</option>
+            <option>Just saying hi</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" name="message" rows="5" placeholder="Tell me about the role or project…" required></textarea>
+          <small class="err"></small>
+        </div>
+        <button class="btn btn-red btn-block" type="submit"><svg><use href="#i-send"/></svg> Send Message</button>
+        <p class="form-note">This opens your email app with the message ready to send to <a data-social="email" data-text="email" class="plain"></a>.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ====== FOOTER ====== -->
+<footer id="footer">
+  <div class="container footer-grid">
+    <div class="f-brand">
+      <a href="#home" class="brand"><svg class="brand-hat"><use href="#i-hat"/></svg><span>Sanskar<b>.</b></span></a>
+      <p>MCA (Cloud Computing) · Parul University.<br/>Building reliable software, one voyage at a time.</p>
+    </div>
+    <div class="f-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a data-social="linkedin">LinkedIn</a></li>
+        <li><a data-social="github">GitHub</a></li>
+        <li><a data-social="instagram">Instagram</a></li>
+        <li><a data-social="x">X (Twitter)</a></li>
+        <li><a data-social="whatsapp">WhatsApp</a></li>
+      </ul>
+    </div>
+    <div class="f-col f-contact">
+      <h4>Get in touch</h4>
+      <a class="f-email" data-social="email"><svg><use href="#i-mail"/></svg><span data-text-target="email"></span></a>
+      <a class="f-phone" data-social="phone"><svg><use href="#i-phone"/></svg><span data-text-target="phone"></span></a>
+      <a href="assets/Sanskar_Pandey_Resume.pdf" download="Sanskar_Pandey_Resume.pdf" class="btn btn-sm btn-gold" data-resume><svg><use href="#i-download"/></svg> Download Resume</a>
+    </div>
+  </div>
+  <div class="container f-bottom">
+    <p>© <span id="year"></span> Sanskar Pandey · Email: <a data-social="email" data-text="email"></a></p>
+    <p class="f-note">One Piece-inspired fan theme. Not affiliated with Eiichiro Oda, Shueisha or Toei Animation.</p>
+    <button class="to-top" id="toTop" type="button" aria-label="Back to top"><svg><use href="#i-up"/></svg></button>
+  </div>
+</footer>
+
+<!-- ====== PROJECT MODAL ====== -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-box" role="document">
+    <button class="modal-close icon-btn" type="button" data-close aria-label="Close dialog"><svg><use href="#i-close"/></svg></button>
+    <span class="kicker" id="modalKicker"></span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <h4>Key features</h4>
+    <ul id="modalFeatures" class="check-list"></ul>
+    <h4>Tech stack</h4>
+    <ul id="modalTech" class="tags"></ul>
+    <div class="modal-actions">
+      <a class="btn btn-red" id="modalRepo" data-social="github"><svg><use href="#i-github"/></svg> View Source Code</a>
+      <button class="btn btn-ghost-dark" type="button" data-close>Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/three.min.js"></script>
+<script src="config.js"></script>
+<script src="scene.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
